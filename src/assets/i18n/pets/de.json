@@ -1,0 +1,12 @@
+{
+  "pets.list.title": "Haustiere",
+  "pets.list.like": "Ich mag es",
+  "pets.list.create": "Haustier erstellen",
+  "pets.view.back": "Zurück",
+  "pets.view.edit": "Bearbeiten",
+  "pets.view.delete": "Delete",
+  "pets.create.send": "Erstellen",
+  "pets.create.name": "Name",
+  "pets.create.type": "Typ",
+  "pets.create.image": "Image"
+}

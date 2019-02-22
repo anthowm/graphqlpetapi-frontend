@@ -1,0 +1,14 @@
+{
+  "pets.list.title": "Pets",
+  "pets.list.like": "Eu gosto",
+  "pets.list.create": "Criar Pet",
+  "pets.view.back": "Voltar",
+  "pets.view.edit": "Editar",
+  "pets.view.delete": "Excluir",
+  "pets.create.send": "Criar",
+  "pets.create.name": "Nome",
+  "pets.create.type": "Tipo",
+  "pets.create.image": "Imagem",
+  "pets.file.required": "Por favor selecione um arquivo",
+  "pets.file.maxsize": "O tamanho total não deve exceder"
+}

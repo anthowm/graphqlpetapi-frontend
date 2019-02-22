@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'styles-variables';
+
+@import '../node_modules/bootstrap/scss/bootstrap-reboot';
+@import '../node_modules/bootstrap/scss/bootstrap-grid';
+@import '../node_modules/bootstrap/scss/utilities/_spacing';
+@import '../node_modules/bootstrap/scss/utilities/_text';
+@import 'styles-reset';
+
+@import '../node_modules/@angular/material/theming';
+
+@include mat-core();
+
+@import 'themes/default-theme.scss';
+@import 'themes/light-theme.scss';
+@import 'themes/black-theme.scss';
+@import 'themes/nature-theme.scss';
+
+@import 'styles-reset.scss-theme';
+@import 'app/core/navigation/navigation.component.scss-theme.scss';
+@import 'app/static/home/home.component.scss-theme';
+
+
+@mixin custom-components-theme($theme) {
+  @include styles-reset-theme($theme);
+  @include navigation-component-theme($theme);
+  @include home-component-theme($theme);
+}
+
+.default-theme {
+  @include angular-material-theme($theme);
+  @include custom-components-theme($theme);
+}
+
+.light-theme {
+  @include angular-material-theme($light-theme);
+  @include custom-components-theme($light-theme);
+}
+
+.black-theme {
+  @include angular-material-theme($black-theme);
+  @include custom-components-theme($black-theme);
+}
+
+.nature-theme {
+  @include angular-material-theme($nature-theme);
+  @include custom-components-theme($nature-theme);
+}
+
+.full-with-field {
+    width: 100%;
+}
+
+.mat-sidenav-container, .mat-sidenav-content, .mat-tab-body-content {
+  transform: none !important;
+}

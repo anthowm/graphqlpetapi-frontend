@@ -1,0 +1,9 @@
+{
+    "message": "Pet fetched",
+    "pet": {
+        "name": "Pelusa",
+        "type": "cat",
+        "imageUrls": "images\\2018-11-22T19-53-19.304Ztesla-cat.jpg",
+        "id": "5bf7092f8f2393195891902e"
+    }
+}

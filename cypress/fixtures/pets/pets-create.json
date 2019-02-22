@@ -1,0 +1,9 @@
+{
+    "message": "Pet created successfully!",
+    "pet": {
+        "name": "Morty",
+        "type": "Morty",
+        "imageUrls": "images\\2018-12-19T12-11-43.872Zmorty.jpg",
+        "id": "5c1a3580ea6e0706f4b6f3d7"
+    }
+}

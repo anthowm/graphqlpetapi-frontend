@@ -1,0 +1,39 @@
+<div class="background">
+  <div class="gradient">
+    <div class="container">
+      <h1>{{ 'title.long' | translate }}</h1>
+      <div class="actions">
+        <a [ngClass]="routeAnimationsElements" mat-raised-button class="actions-main" color="primary"
+          routerLink="../home">
+          {{ 'menu.home' | translate }}
+        </a>
+        <a [ngClass]="routeAnimationsElements" mat-raised-button class="actions-main" color="primary"
+          routerLink="../features">
+          {{ 'menu.features' | translate }}
+        </a>
+        <a [ngClass]="routeAnimationsElements" mat-raised-button class="actions-main" color="primary"
+          routerLink="../pets">
+          {{ 'menu.pets' | translate }}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="follow-releases">
+    <h2 data-testid="home-description">Description</h2>
+    <p data-testid="home-description-p" [ngClass]="routeAnimationsElements">
+      This is an example with angular-ngrx-material-starter + graphql apollo client
+    </p>
+  </div>
+</div>
+<div class="container">
+  <div class="follow-releases">
+    <h2 data-testid='get-started'>Get Started</h2>
+    <code>git clone
+      https://github.com/anthowm/graphqlpetapi-frontend.git
+      </code><br>
+    <code>npm install</code><br>
+    <code>npm run start</code><br>
+  </div>
+</div>

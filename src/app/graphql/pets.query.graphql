@@ -1,0 +1,42 @@
+query GetPets($page: Int, $name: String, $type: String) {
+  pets(page: $page, name: $name, type: $type) {
+    pets {
+        id,
+        name,
+        type
+        imageUrls{
+          filename,
+          path
+        },
+        creator {
+          name
+          email
+        }
+    }
+    totalPets
+    filterData {
+      isFilterData
+      currentPage
+      queryParams {
+        name
+        type
+      }
+    }
+  }
+}
+
+query GetPet($id: ID!){
+  pet(id: $id){
+    id,
+    name,
+    type
+    imageUrls{
+      filename
+      path
+    }
+    creator {
+      name
+      email
+    }
+  }
+}

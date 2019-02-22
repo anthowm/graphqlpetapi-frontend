@@ -1,0 +1,14 @@
+<div class="header">
+  <button mat-dialog-close mat-button>
+    <mat-icon>close</mat-icon>
+  </button>
+  <h1 mat-dialog-title>{{ data.title }}</h1>
+</div>
+<div mat-dialog-content>
+  <p [innerHTML]="data.text"></p>
+</div>
+<div mat-dialog-actions class="actions">
+
+  <div class="col-md-3 offset-md-6"><button mat-button (click)="cancel()" class="full-with-field">Cancel</button></div>
+  <div class="col-md-3"><button mat-button (click)="delete()" color="primary" class="full-with-field">Delete</button></div>
+</div>

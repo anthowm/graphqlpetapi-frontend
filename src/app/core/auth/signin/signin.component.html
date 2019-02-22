@@ -1,0 +1,65 @@
+<div class="container h-100">
+    <div class="row align-items-center h-100">
+        <div class="col-12 col-md-6 col-sm-9 mx-auto">
+            <mat-card class="example-card pl-5 pr-5 pt-5 pb-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <h3>{{ 'auth.signin.title' | translate }}</h3>
+                    </div>
+                    <div class="col-12 text-center">
+                        <h4>{{ 'auth.signup.subtitle' | translate }}</h4>
+                    </div>
+                </div>
+                <mat-card-content>
+                    <div [formGroup]="signinForm">
+                        <div class="row">
+                            <div class="col-12">
+                                <mat-form-field class="full-with-field" [ngClass]="routeAnimationsElements">
+                                    <input matInput placeholder="{{ 'auth.signin.email' | translate }}" formControlName="email"
+                                        required>
+                                    <mat-error *ngIf="signinForm.get('email').hasError('required')">
+                                        {{ 'auth.signup.email'| translate}}
+                                        {{ 'auth.signup.required' | translate }}
+                                    </mat-error>
+                                    <mat-error *ngIf="signinForm.get('email').hasError('email')">
+                                        {{ 'auth.signup.email'| translate}}
+                                        {{ 'auth.signup.valid' | translate }}
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-12">
+                                <mat-form-field hintLabel="Min 8 characters" class="full-with-field" [ngClass]="routeAnimationsElements">
+                                    <input matInput placeholder="{{ 'auth.signin.password' | translate }}"
+                                        formControlName="password" type="password" required>
+                                    <mat-hint align="end">{{signinForm.get('password').value?.length}} /
+                                        20</mat-hint>
+                                    <mat-error *ngIf="signinForm.get('password').hasError('required')">
+                                        {{ 'auth.signup.password' | translate }}
+                                        {{ 'auth.signup.required' | translate }}
+                                    </mat-error>
+                                    <mat-error *ngIf="signinForm.get('password').hasError('minlength')">
+                                        {{ 'auth.signup.password' | translate }}
+                                        {{ 'auth.signup.longer' | translate }} 8
+                                    </mat-error>
+                                    <mat-error *ngIf="signinForm.get('password').hasError('maxlength')">
+                                        {{ 'auth.signup.password' | translate }}
+                                        {{ 'auth.signup.smaller' | translate }} 20
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                </mat-card-content>
+                <mat-card-actions>
+                    <div class="row">
+                        <div class="col-12">
+                            <button mat-raised-button color="primary" class="full-with-field" [ngClass]="routeAnimationsElements"
+                                [disabled]="!signinForm.valid" (click)="onSignin()">
+                                {{'auth.signin.signin' | translate}}</button>
+                        </div>
+                    </div>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+{
+  "pets.list.title": "Animaux",
+  "pets.list.like": "Je l'aime bien",
+  "pets.list.create": "Créer un animal de compagnie",
+  "pets.view.back": "Retour",
+  "pets.view.edit": "Modifier",
+  "pets.view.delete": "Supprimer",
+  "pets.create.send": "Créer",
+  "pets.create.name": "Nom",
+  "pets.create.type": "Type",
+  "pets.create.image": "Image"
+}

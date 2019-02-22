@@ -1,0 +1,14 @@
+{
+  "pets.list.title": "Mascotas",
+  "pets.list.like": "Me gusta",
+  "pets.list.create": "Crear Mascota",
+  "pets.view.back": "Volver",
+  "pets.view.edit": "Editar",
+  "pets.view.delete": "Borrar",
+  "pets.create.send": "Crear",
+  "pets.create.name": "Nombre",
+  "pets.create.type": "Tipo",
+  "pets.create.image": "Imagen",
+  "file.required": "Por favor seleccione un archivo",
+  "file.maxsize": "El tamaño total no debe exceder"
+}

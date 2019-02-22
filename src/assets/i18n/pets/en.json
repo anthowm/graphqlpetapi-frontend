@@ -1,0 +1,12 @@
+{
+  "pets.list.title": "Pets",
+  "pets.list.like": "Like",
+  "pets.list.create": "Create Pet",
+  "pets.view.back": "Back",
+  "pets.view.edit": "Edit",
+  "pets.view.delete": "Delete",
+  "pets.create.send": "Create",
+  "pets.create.name": "Name",
+  "pets.create.type": "Type",
+  "pets.create.image": "Image"
+}
