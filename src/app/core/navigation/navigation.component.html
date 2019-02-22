@@ -10,7 +10,7 @@
           routerLinkActive="active">
           {{item.label | translate}}
         </a>
-        <a mat-list-item href="https://gitlab.com/anthowm/nodepetapi" target="_blank">
+        <a mat-list-item href="https://github.com/anthowm/graphqlpetapi-frontend" target="_blank">
           Github
         </a>
       </mat-nav-list>
@@ -18,7 +18,8 @@
 
     <div class="wrapper">
 
-      <div class="toolbar" [style.position]="(stickyHeader$ | async) ? 'fixed' : 'inherit'" [class.mat-elevation-z4]="(stickyHeader$ | async)">
+      <div class="toolbar" [style.position]="(stickyHeader$ | async) ? 'fixed' : 'inherit'"
+        [class.mat-elevation-z4]="(stickyHeader$ | async)">
         <mat-toolbar color="primary">
           <button mat-icon-button class="d-md-none" (click)="sidenav.open()">
             <fa-icon icon="bars"></fa-icon>
@@ -26,10 +27,11 @@
 
           <span routerLink="" class="branding spacer center d-inline d-sm-none" data-testid="navigation-logo-sm">
             <img [src]="logo" /></span>
-          <span routerLink="" class="branding spacer center d-none d-sm-inline d-md-none" data-testid="navigation-logo-md"><img
-              [src]="logo" /> {{
+          <span routerLink="" class="branding spacer center d-none d-sm-inline d-md-none"
+            data-testid="navigation-logo-md"><img [src]="logo" /> {{
             'title.short' | translate }}</span>
-          <span routerLink="" class="branding spacer d-none d-md-inline" data-testid="navigation-logo-lg"><img [src]="logo" />
+          <span routerLink="" class="branding spacer d-none d-md-inline" data-testid="navigation-logo-lg"><img
+              [src]="logo" />
             {{ 'title.long' |
             translate
             }}</span>
@@ -63,8 +65,9 @@
             <fa-icon icon="cog"></fa-icon>
           </button>
 
-          <a [matTooltip]="'header.github' | translate" matTooltipPosition="before" mat-icon-button class="link d-none d-sm-inline"
-            href="https://gitlab.com/anthowm/nodepetapi" target="_blank" data-testid="navigation-github">
+          <a [matTooltip]="'header.github' | translate" matTooltipPosition="before" mat-icon-button
+            class="link d-none d-sm-inline" href="https://github.com/anthowm/graphqlpetapi-frontend" target="_blank"
+            data-testid="navigation-github">
             <fa-icon [icon]="['fab','github']"></fa-icon>
           </a>
 
@@ -84,7 +87,7 @@
       <div class="footer">
         <div class="row">
           <div class="col-sm-12 links" data-testid="navigation-footer-links">
-            <a href="https://gitlab.com/anthowm/nodepetapi" target="_blank">
+            <a href="https://github.com/anthowm/graphqlpetapi-frontend" target="_blank">
               <fa-icon [icon]="['fab','github']"></fa-icon>
               <span>Github</span>
             </a>
