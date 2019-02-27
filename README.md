@@ -51,4 +51,6 @@ You can check a demo here https://petapidemo.firebaseapp.com (The images are not
 
 - This project use ngrx insteaf of apollo client cache (this project disable the cache), if you want to use it you can check the oficial docs of angular client https://www.apollographql.com/docs/angular/
 
+- I use a graphqlapi you can find it in this repo https://github.com/anthowm/graphqlpetapi-backend, you need to clone and setup it following the readme.
+
 
